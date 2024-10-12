@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Layout page</title>
+</head>
+<body>
+
+<div>
+    <header role="banner" class="position-absolute">
+        <!-- Top Bar -->
+        <div class="top-bar full-width hide-s hide-m">
+            <div class="right">
+                <a href="login.html" class="text-white text-primary-hover">LOGIN</a> <span class="sep text-white">|</span>
+                <a href="join.html" class="text-white text-primary-hover">JOIN</a><span class="sep text-white">|</span>
+                <a class="text-white text-primary-hover">LANGUAGE</a>
+            </div>
+        </div>
+        <!-- Top Navigation -->
+        <nav class="background-transparent background-transparent-hightlight full-width sticky">
+            <div class="s-12 l-2">
+                <a href="home.html" class="logo">
+                    <!-- Logo Dark Version -->
+                    <img class="logo-white" src="img/clapwave/ClapWave%20Logo%20dark.svg" alt="">
+                    <!-- Logo White Version -->
+                    <img class="logo-dark" src="img/clapwave/ClapWave%20Logo%20Light.svg" alt="">
+                </a>
+            </div>
+            <div class="top-nav s-12 l-10">
+
+                <ul class="right chevron">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about-us.html">About</a></li>
+                    <li><a>APPLICATION</a>
+                        <ul>
+                            <li><a href="how-to-apply.html">How to Apply</a></li>
+                            <li><a href="status.html">Status</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resource.html">RESOURCE</a>
+                        <ul>
+                            <li><a>1</a></li>
+                            <li><a>2</a></li>
+                            <li><a>3</a></li>
+                            <li><a>4</a></li>
+                            <li><a>5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="contact.html">Contact</a>
+                        <ul>
+                            <li><a>1</a></li>
+                            <li><a>2</a></li>
+                            <li><a>3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+</div>
+
+<div layout:fragment="content">
+    <p>Page content goes here</p>
+</div>
+
+<div>
+    <h3>Sample Layout Footer</h3>
+</div>
+
+<th:block layout:fragment="scripts">
+
+</th:block>
+
+</body>
+</html>

@@ -71,5 +71,15 @@ public class SampleController {
 
         model.addAttribute("dto", sampleDTO);
     }
+   /* @GetMapping("/ex/ex3")
+    public void ex3(Model model) {
+
+        model.addAttribute("arr", new String[]{"AAA", "BBB", "CCC"});
+    }*/
+    @GetMapping("/fragments/header")
+    public String header(Model model) {
+        model.addAttribute("msg", "This is Header");
+        return "fragments/header";
+    }
 }
 
